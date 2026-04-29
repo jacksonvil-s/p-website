@@ -2,16 +2,57 @@
 <html>
 
 <head>
-    <title>James's animations</title>
+    <title>James's workshop</title>
     <link rel="icon" type="image/x-icon" href="./images/logo.png">
+
+    <!--Inter font loading-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
 
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <h1>James's Animation</h1>
+    <div id="header"></div>
 
-    <p>My paragraph</p>
+    <p>Welcome to James's Workshops! Here I showcase some of my work.</p>
+
+    <p>To see some of my work, use the buttons above to navigate. To learn more about me, click on about me!</p>
+
+    <p>As of the current stage, I <strong>DO NOT</strong> accept any paid work. Sorry for the inconvenice.</p>
+
+    <p>Below are some random images I toke on a flight.</p>
+
+    <figure>
+        <img style="height: auto;" src="./images/BMNationalPark.jpeg" height="1008" width="1117"
+            alt="Photographed over the Blue Mountains national park">
+        <figcaption>Photographed over the Blue Mountains on a flight</figcaption>
+    </figure>
+
+    <figure>
+        <img style="height: auto;" src="./images/RYNationalPark.jpeg" height="1008" width="1117"
+            alt="Photographed over the Blue Mountains national park">
+        <figcaption>Photographed over the Royal National Park, on the same flight</figcaption>
+    </figure>
+
+    <div id="footer"></div>
+
 </body>
+
+<script>
+    async function load(id, file) {
+        const res = await fetch(file);
+        document.getElementById(id).innerHTML = await res.text();
+    }
+
+    load("header", "header.html");
+    load("footer", "footer.html");
+</script>
+<noscript>This website REQUIRES JavaScript to be enabled. I promise to never sell/track/use your information.
+    JavaScript is only for loading componets. For more information, visit the open source repo.</noscript>
 
 </html>

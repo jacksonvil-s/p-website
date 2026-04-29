@@ -1,11 +1,48 @@
-p {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-h1 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
 body {
-    background-color: blanchedalmond;
+  font-family: system-ui, sans-serif;
+  background-color: blanchedalmond;
+}
+
+h1, h2, h3, p, figcaption {
+  font-family: "Inter", sans-serif;
+}
+
+button {
+    background-color: #2e7d32;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background-color: #256628;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+figure {
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+figcaption {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #666;
 }
